@@ -6,8 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="./scrip.js"></script>
+    <link rel="stylesheet" href="style.css">   
     <title>DevClub - Convert Money</title>
 </head>
 <body>
@@ -28,22 +27,23 @@
         </label>
         <label>
             Valor
-            <input placeholder="R$ 10.000,00">
+            <input class="input-currency" placeholder="R$ 10.000,00">
         </label>
-        <button>Converter</button>
+        <button class="convert-button">Converter</button>
         <section>
-            <div class="curreacy-box">
+            <div class="currency-box">
                 <img src="./assets/Real.png" alt="logo-moeda-a-converter">
-                <p class="curreacy">Real</p>
-                <p class="curreacy-value">R$ 0,00</p>
+                <p class="currency">Real</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
             <img class="arrow-img" src="./assets/Arrow.png" alt="seta">
-            <div class="curreacy-box">
+            <div class="currency-box">
                 <img src="./assets/Dolar.png" alt="logo-moeda-a-convertida">
-                <p class="curreacy">Dólar</p>
-                <p class="curreacy-value">US$ 0,00</p>
+                <p class="currency">Dólar</p>
+                <p class="currency-value-converted">US$ 0,00</p>
             </div>
         </section>
-    </main>
+    </main>    
 </body>
+<script src="./script.js"></script>
 </html>
